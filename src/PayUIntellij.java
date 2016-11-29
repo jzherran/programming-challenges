@@ -12,16 +12,17 @@ public class PayUIntellij {
 
     public static void main(String[] args) {
 
-        String base = "D:\\jhonatan.zambrano\\PayU\\git\\pagosonlinepps\\";
+        String base = "/Users/jhonatan.zambrano/Documents/work/PayU/repository/pagosonlinepps/";
+        //"D:/jhonatan.zambrano/PayU/git/pagosonlinepps/";
         String[] spaces = {
-                "ppp-core-spaces\\ppp-core-account-space\\ppp-core-account-space.iml",
-                "ppp-core-spaces\\ppp-core-data-space\\ppp-core-data-space.iml",
-                "ppp-core-spaces\\ppp-core-payment-workflow-space\\ppp-core-payment-workflow-space.iml",
-                "ppp-core-spaces\\ppp-core-bridge-space\\ppp-core-bridge-space.iml",
-                "ppp-core-utils-pu\\ppp-core-utils-pu.iml",
-                "ppp-core-account\\ppp-core-account.iml",
-                "ppp-pps-pu\\ppp-pps-pu.iml",
-                "ppp-pps-ppn-local\\ppp-pps-ppn-local.iml",
+                "ppp-core-spaces/ppp-core-account-space/ppp-core-account-space.iml",
+                "ppp-core-spaces/ppp-core-data-space/ppp-core-data-space.iml",
+                "ppp-core-spaces/ppp-core-payment-workflow-space/ppp-core-payment-workflow-space.iml",
+                "ppp-core-spaces/ppp-core-bridge-space/ppp-core-bridge-space.iml",
+                "ppp-core-utils-pu/ppp-core-utils-pu.iml",
+                "ppp-core-account/ppp-core-account.iml",
+                "ppp-pps-pu/ppp-pps-pu.iml",
+                "ppp-pps-ppn-local/ppp-pps-ppn-local.iml",
         };
 
         for (String space : spaces) {
