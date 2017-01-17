@@ -4,10 +4,22 @@
 public class Alpha5 {
 
     public static void main(String[] args) {
-        System.out.println(alpha5("yahoo"));
+        //System.out.println(alpha5("yahoo"));
         //System.out.println((int)'o');
         //System.out.println((char)97);
         //System.out.println((433/26));
+
+        int n = 6;
+
+        int ans = 1;
+       /* while ((n & 1) == 0) {
+            n = n & 1;
+            ans++;
+            System.out.println(n+ " " + ans + " " + (n & 1));
+        }*/
+        System.out.println(n ^ 1);
+
+        System.out.println(ans);
     }
 
     static char alpha5(String s) {
