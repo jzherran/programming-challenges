@@ -1,3 +1,5 @@
+package codefight;
+
 /**
  * @author <a href="mailto:jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano</a>
  *         30/9/2016

@@ -1,4 +1,5 @@
-import java.awt.*;
+package codefight;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

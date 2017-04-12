@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package codefight;
+
 import java.util.Scanner;
 
 /**

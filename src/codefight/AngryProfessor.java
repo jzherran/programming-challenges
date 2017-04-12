@@ -1,3 +1,5 @@
+package codefight;
+
 import java.util.*;
 
 /**

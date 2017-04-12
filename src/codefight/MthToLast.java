@@ -1,4 +1,4 @@
-/**
+package codefight; /**
  * Created by jhonatan.zambrano on 11/28/16.
  */
 import java.math.BigInteger;
@@ -7,7 +7,7 @@ import java.util.*;
 public class MthToLast {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named MthToLast. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named hackerrank.MthToLast. */
 
         Scanner sc = new Scanner(System.in);
 

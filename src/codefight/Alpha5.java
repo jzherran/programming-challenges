@@ -1,3 +1,5 @@
+package codefight;
+
 /**
  * Created by jhonatan.zambrano on 12/16/16.
  */
