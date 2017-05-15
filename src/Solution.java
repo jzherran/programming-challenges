@@ -1,5 +1,8 @@
 import java.net.MalformedURLException;
 import java.util.Arrays;
+import java.util.StringTokenizer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by jhonatan.zambrano on 1/19/17.
@@ -7,7 +10,16 @@ import java.util.Arrays;
 public class Solution {
 
   public static void main(String[] args) throws MalformedURLException {
-    System.out.println(makeArrayConsecutive2(new int[]{6, 2, 3, 8}));
+    //System.out.println(makeArrayConsecutive2(new int[]{6, 2, 3, 8}));
+
+    StringTokenizer st = new StringTokenizer("/transfers-api/.*/transfers/?$,/transfers-api/.*/transfers.*\\\\?.*", ",");
+
+    while (st.hasMoreTokens()) {
+      Pattern pattern = Pattern.compile(st.nextToken());
+
+      final Matcher matcher = pattern.matcher("/hermes/transfers-api/api/transfers/");
+      System.out.println(matcher.find());
+    }
   }
 
   static boolean triangularity(int[] sl) {

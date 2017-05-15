@@ -1,7 +1,7 @@
 package codefight;
 
 /**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
+ * @author jzherran@gmail
  * @date 3/24/17
  */
 public class ConsecutiveBit {

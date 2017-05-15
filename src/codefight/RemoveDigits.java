@@ -3,7 +3,7 @@ package codefight;
 import java.util.Arrays;
 
 /**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
+ * @author jzherran@gmail
  * @date 3/23/17
  */
 public class RemoveDigits {
