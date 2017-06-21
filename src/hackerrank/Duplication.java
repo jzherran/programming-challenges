@@ -1,3 +1,5 @@
+package hackerrank;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -6,39 +8,6 @@ import java.util.Scanner;
  * @date 5/15/17
  */
 public class Duplication {
-
-    /*public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int q = sc.nextInt();
-        int m = Integer.MIN_VALUE;
-        int x[] = new int[q];
-
-        for (int i = 0; i < q; i++) {
-            x[i] = sc.nextInt();
-            m = Integer.max(m, x[i]);
-        }
-
-        String all = solve(m);
-
-        for (int i = 0; i < q; i++)
-            System.out.println(all.charAt(x[i]));
-    }
-
-    private static String solve(int x) {
-        String r = "0";
-        while(r.length() < x) {
-            r = r + invert(r);
-        }
-        return r;
-    }
-
-    private static String invert(String n) {
-        n = n.replaceAll("0", "x");
-        n = n.replaceAll("1", "0");
-        n = n.replaceAll("x", "1");
-        return n;
-    }*/
 
     static String invert(String n) {
         n = n.replaceAll("0", "x");

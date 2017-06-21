@@ -40,4 +40,15 @@ public class Solution {
     return c - s.length;
   }
 
+  static boolean almostIncreasingSequence(int[] sequence) {
+
+    Arrays.sort(sequence);
+    int diff = sequence[0] - sequence[1];
+    for (int i = 1; i <= sequence.length; i++) {
+      if((sequence[i] - sequence[i+1]) != diff) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
