@@ -14,17 +14,18 @@ public class BetweenTwoSets {
     int n = in.nextInt();
     int m = in.nextInt();
     int[] a = new int[n];
-    for(int a_i=0; a_i < n; a_i++){
+    for (int a_i = 0; a_i < n; a_i++) {
       a[a_i] = in.nextInt();
     }
     int[] b = new int[m];
-    for(int b_i=0; b_i < m; b_i++){
+    for (int b_i = 0; b_i < m; b_i++) {
       b[b_i] = in.nextInt();
     }
 
     int r = 0;
-    for(int i = 1; i <= Math.max(Arrays.stream(a).max().getAsInt(), Arrays.stream(b).max().getAsInt()); i++) {
-      if(areFactors(i, a) && isFactor(i, b)) {
+    for (int i = 1;
+        i <= Math.max(Arrays.stream(a).max().getAsInt(), Arrays.stream(b).max().getAsInt()); i++) {
+      if (areFactors(i, a) && isFactor(i, b)) {
         r++;
       }
     }
@@ -33,16 +34,18 @@ public class BetweenTwoSets {
   }
 
   private static boolean isFactor(int x, int[] b) {
-    for (int i: b)
-      if (i % x != 0)
+    for (int i : b)
+      if (i % x != 0) {
         return false;
+      }
     return true;
   }
 
   private static boolean areFactors(int x, int[] a) {
-    for (int i: a)
-      if (x % i != 0)
+    for (int i : a)
+      if (x % i != 0) {
         return false;
+      }
     return true;
   }
 }

@@ -1,7 +1,6 @@
 package hackerrank;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -30,7 +29,7 @@ public class MagicSquare {
 
     for (int i = 1; i < 28; i++) {
       int tmp = 0;
-      for (Integer j: set) {
+      for (Integer j : set) {
         tmp += Math.abs(i - j);
       }
       r = Math.min(r, tmp);

@@ -15,8 +15,8 @@ public class ConsecutiveBit {
     String s = Integer.toString(num, 2);
     System.out.println(s);
     char lc = '.';
-    for (char a: s.toCharArray()) {
-      if(a == lc && a == '1') {
+    for (char a : s.toCharArray()) {
+      if (a == lc && a == '1') {
         return true;
       }
       lc = a;

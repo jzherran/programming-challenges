@@ -14,7 +14,7 @@ public class TheHurdleRace {
     int n = in.nextInt();
     int k = in.nextInt();
     int[] h = new int[n];
-    for(int h_i=0; h_i < n; h_i++){
+    for (int h_i = 0; h_i < n; h_i++) {
       h[h_i] = in.nextInt();
     }
     // your code goes here
