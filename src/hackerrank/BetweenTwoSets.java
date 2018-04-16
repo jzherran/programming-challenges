@@ -3,10 +3,6 @@ package hackerrank;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author jzherran@gmail
- * @date 5/9/17
- */
 public class BetweenTwoSets {
 
   public static void main(String[] args) {

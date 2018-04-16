@@ -2,9 +2,6 @@ package hackerrank;
 
 import java.math.BigInteger;
 
-/**
- * Created by jzherran on 12/19/16.
- */
 public class remainFib {
 
     public static void main(String[] args) {

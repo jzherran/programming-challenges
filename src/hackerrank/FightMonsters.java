@@ -3,10 +3,6 @@ package hackerrank;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 5/16/17
- */
 public class FightMonsters {
 
   static int getMaxMonsters(int n, int hit, int t, int[] h) {

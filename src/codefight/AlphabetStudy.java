@@ -1,8 +1,5 @@
 package codefight;
 
-/**
- * Created by jhonatan.zambrano on 1/5/17.
- */
 public class AlphabetStudy {
 
   public static void main(String[] args) {

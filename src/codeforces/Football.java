@@ -2,9 +2,6 @@ package codeforces;
 
 import java.util.Scanner;
 
-/**
- * Created by jhonatan.zambrano on 2/17/17.
- */
 public class Football {
 
   public static void main(String[] args) {

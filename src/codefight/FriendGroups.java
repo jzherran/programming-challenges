@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by jhonatan.zambrano on 12/19/16.
- */
 public class FriendGroups {
 
   public static void main(String[] args) {

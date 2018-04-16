@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * @author <a href="mailto:jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano</a> 29/9/2016
- */
 public class CutTheSticks {
 
   public static void main(String[] args) {

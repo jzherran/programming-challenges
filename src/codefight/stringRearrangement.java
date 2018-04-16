@@ -2,14 +2,9 @@ package codefight;
 
 import java.util.Arrays;
 
-/**
- * Created by jhonatan.zambrano on 1/4/17.
- */
 public class stringRearrangement {
 
   public static void main(String[] args) {
-    //System.out.println(stringsRearrangement(new String[]{"aba", "bbb", "bab"}));
-    //System.out.println(stringsRearrangement(new String[]{"ab", "bb", "aa"}));
     System.out.println(stringsRearrangement(new String[] {"abc", "abx", "axx", "abc"}));
   }
 

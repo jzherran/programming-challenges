@@ -3,10 +3,6 @@ package hackerrank;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 5/17/17
- */
 public class CircularWalk {
 
   static int circularWalk(int n, int s, int t, int r_0, int g, int seed, int p) {

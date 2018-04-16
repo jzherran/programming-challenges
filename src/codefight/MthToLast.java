@@ -1,6 +1,4 @@
-package codefight; /**
- * Created by jhonatan.zambrano on 11/28/16.
- */
+package codefight;
 
 import java.math.BigInteger;
 import java.util.Scanner;

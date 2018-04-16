@@ -2,10 +2,6 @@ package codefight;
 
 import java.util.Arrays;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 5/12/17
- */
 public class WordsRotationCc {
 
   public static void main(String[] args) {

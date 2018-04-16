@@ -2,10 +2,6 @@ package hackerrank;
 
 import java.util.Scanner;
 
-/**
- * @author jzherran@gmail
- * @date 5/9/17
- */
 public class DesignerPDFViewer {
 
   public static void main(String[] args) {

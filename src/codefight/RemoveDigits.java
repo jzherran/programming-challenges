@@ -2,10 +2,6 @@ package codefight;
 
 import java.util.Arrays;
 
-/**
- * @author jzherran@gmail
- * @date 3/23/17
- */
 public class RemoveDigits {
 
   public static void main(String[] args) {

@@ -1,12 +1,7 @@
 package hackerrank;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 5/15/17
- */
 public class Duplication {
 
     static String invert(String n) {

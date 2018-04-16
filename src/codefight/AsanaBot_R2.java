@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-/**
- * Created by jhonatan.zambrano on 1/2/17.
- */
 public class AsanaBot_R2 {
 
   public static void main(String[] args) {

@@ -2,9 +2,6 @@ package codefight;
 
 import java.util.Scanner;
 
-/**
- * @author <a href="mailto:jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano</a> 26/9/2016
- */
 public class Kangaroo {
 
   public static void main(String[] args) {

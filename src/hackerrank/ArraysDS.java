@@ -2,9 +2,6 @@ package hackerrank;
 
 import java.util.Scanner;
 
-/**
- * Created by jzherran on 5/14/17.
- */
 public class ArraysDS {
 
     public static void main(String[] args) {

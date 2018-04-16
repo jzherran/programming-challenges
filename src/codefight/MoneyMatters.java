@@ -3,9 +3,6 @@ package codefight;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Created by jhonatan.zambrano on 12/6/16.
- */
 public class MoneyMatters {
 
   private static final String IMPOSSIBLE = "IMPOSSIBLE";

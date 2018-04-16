@@ -2,9 +2,6 @@ package codefight;
 
 import java.util.Arrays;
 
-/**
- * Created by jhonatan.zambrano on 12/16/16.
- */
 public class RotateImage {
 
   public static void main(String[] args) {

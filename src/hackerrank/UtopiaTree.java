@@ -2,10 +2,6 @@ package hackerrank;
 
 import java.util.Scanner;
 
-/**
- * @author jzherran@gmail.com
- * @date 5/9/17
- */
 public class UtopiaTree {
 
   public static void main(String[] args) {

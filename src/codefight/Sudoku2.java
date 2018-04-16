@@ -1,14 +1,9 @@
 package codefight;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 6/23/17
- */
 public class Sudoku2 {
 
   public static void main(String[] args) {

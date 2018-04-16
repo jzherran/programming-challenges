@@ -2,9 +2,6 @@ package hackerrank;
 
 import java.util.Scanner;
 
-/**
- * Created by jzherran on 5/23/17.
- */
 public class JavaLoops {
 
     public static void main(String []args){

@@ -3,10 +3,6 @@ package codefight;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author <a href="jhonatan.zambrano@payulatam.com">Jhonatan A. Zambrano Herran</a>
- * @date 6/22/17
- */
 public class FirstDuplicate {
 
   public static void main(String[] args) {

@@ -1,9 +1,5 @@
 package codefight;
 
-/**
- * @author jzherran@gmail
- * @date 3/24/17
- */
 public class ConsecutiveBit {
 
   public static void main(String[] args) {

@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by jhonatan.zambrano on 12/14/16.
- */
 public class Ubachi {
 
   public static void main(String[] args) {

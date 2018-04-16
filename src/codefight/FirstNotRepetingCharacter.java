@@ -3,9 +3,6 @@ package codefight;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jhonatan.zambrano on 12/16/16.
- */
 public class FirstNotRepetingCharacter {
 
   public static void main(String[] args) {

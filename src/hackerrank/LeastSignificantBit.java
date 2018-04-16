@@ -1,13 +1,8 @@
 package hackerrank;
 
-import java.io.IOException;
-
-/**
- * Created by jzherran on 4/11/17.
- */
 public class LeastSignificantBit {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println(solution(12));
     }
 

@@ -1,19 +1,9 @@
 package hackerrank;
 
-import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
-/**
- * Created by jzherran on 3/1/17.
- */
 public class kthBoring {
 
     public static void main(String [] args) {
-        //System.out.println(hackerrank.kthBoring(3));
-        //System.out.println(f(28657) + " " + p(28657));
-        System.out.println(17711*17711*5 + " " + Integer.MAX_VALUE);
+        System.out.println(kthBoring(3));
     }
 
     static int kthBoring(int k) {

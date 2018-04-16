@@ -2,9 +2,6 @@ package hackerrank;
 
 import java.util.Scanner;
 
-/**
- * Created by jzherran on 5/9/17.
- */
 public class TheBirthdayBar {
 
     static int getWays(int[] squares, int d, int m){
