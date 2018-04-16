@@ -2,7 +2,7 @@ package codeforces;
 
 import java.util.Scanner;
 
-public class Football {
+public class CF_96A {
 
   public static void main(String[] args) {
     System.out.println(football());
@@ -13,14 +13,29 @@ public class Football {
     Scanner sc = new Scanner(System.in);
     char[] t = sc.nextLine().toCharArray();
 
-    int mt = 0, at = -1;
-    for (char c : t) {
-      if (c == '0' && (at == 0 || at == -1)) {
+    int mt = 0;
+    char at = 0;
+
+    for (int i = 0; i < t.length; i++) {
+
+      if (at != t[i]) {
+        mt = 0;
+      }
+
+      at = t[i];
+
+      if (at == '0') {
         mt++;
-      } else if (c == '1' && (at == 1 || at == -1)) {
+      } else if (at == '1') {
         mt++;
       }
+
+      if (mt == 7) {
+        return "YES";
+      }
     }
-    return "";
+
+    sc.close();
+    return "NO";
   }
 }
