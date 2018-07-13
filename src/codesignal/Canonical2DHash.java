@@ -1,4 +1,4 @@
-package codefight;
+package codesignal;
 
 public class Canonical2DHash {
 

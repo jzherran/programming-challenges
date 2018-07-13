@@ -1,4 +1,4 @@
-package codefight;
+package codesignal;
 
 import java.util.Scanner;
 

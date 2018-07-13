@@ -1,4 +1,4 @@
-package codefight;
+package codesignal;
 
 public class AsanaBot_R3 {
 

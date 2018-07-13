@@ -1,4 +1,4 @@
-package codefight;
+package codesignal;
 
 import java.math.BigInteger;
 import java.util.Scanner;

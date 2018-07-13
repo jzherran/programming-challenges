@@ -1,4 +1,4 @@
-package codefight;
+package codesignal;
 
 import java.util.ArrayList;
 import java.util.List;

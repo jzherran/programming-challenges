@@ -1,48 +1,69 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Random;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution {
+  public static void main(String args[] ) throws Exception {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
 
-  public static void main(String[] args) throws IOException {
-    System.out.println(solution());
-  }
-
-  public static int solution() throws IOException {
     Scanner sc = new Scanner(System.in);
-    Random rand = new Random();
-    char[] chars = new char[]{'A', 'I', 'D'};
-    File directory = new File("\\resources");
 
-    if (!directory.exists()) directory.mkdir();
+    int n = sc.nextInt();
+    int[][] A = new int[n][n];
 
-    for (int i = 0; i < 20; i++) {
-      File file = new File(String.format("\\resources\\in%02d.txt", i+1));
-      FileWriter fw = new FileWriter(file);
-      BufferedWriter bw = new BufferedWriter(fw);
-      for (int j = 0; j < rand.nextInt(10) + 5; j++) {
-        if (!file.exists()) file.createNewFile();
-
-        StringBuilder sb = new StringBuilder();
-        for (int k = 0; k < rand.nextInt(10) + 5; k++) {
-          sb.append(chars[rand.nextInt(2) + 0]);
-        }
-        System.out.println(sb.toString());
-        bw.write(sb.toString());
-        bw.newLine();
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n; j++) {
+        A[i][j] = sc.nextInt();
       }
-      bw.close();
-      System.out.println();
     }
 
-    sc.close();
-    return 0;
+    int q = sc.nextInt();
+    int[][] Q = new int[q][4];
+
+    for (int i = 0; i < q; i++) {
+      for (int j = 0; j < 4; j++) {
+        Q[i][j] = sc.nextInt() - 1;
+      }
+    }
+
+    for (int i = 0; i < Q.length; i++) {
+      int[] t = new int[(Math.abs(Q[i][0] - Q[i][2]) + 1) *
+          (Math.abs(Q[i][1] - Q[i][3]) + 1)];
+
+      int p = 0;
+      for (int r = Q[i][0]; r <= Q[i][2]; r++) {
+        for (int c = Q[i][1]; c <= Q[i][3]; c++) {
+          t[p] = A[r][c];
+          p++;
+        }
+      }
+
+      Arrays.sort(t);
+
+      int ans;
+
+      if(t.length == 1) ans = t[0];
+      else {
+        if(t.length % 2 == 0) {
+          ans = Math.floorDiv(t[t.length / 2] + t[(t.length / 2) - 1], 2);
+        } else {
+          ans = t[(t.length / 2) + 1];
+        }
+      }
+
+      System.out.println(ans);
+    }
   }
 }
 
 /*
+4
+1 3 2 4
+8 1 2 9
+1 1 2 2
+7 5 3 6
+3
+1 1 2 2
+1 2 3 4
+4 4 4 4
 
-*/
+ */
