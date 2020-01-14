@@ -5,14 +5,14 @@ import java.util.List;
 
 public class FirstNotRepetingCharacter {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println(firstNotRepeatingCharacter("abacabad"));
     System.out.println(firstNotRepeatingCharacter("abacabaabacaba"));
   }
 
-  static char firstNotRepeatingCharacter(String s) {
-    List<Character> t = new ArrayList<>(), u = new ArrayList<>();
-    for (Character c : s.toCharArray()) {
+  static char firstNotRepeatingCharacter(final String s) {
+    final List<Character> t = new ArrayList<>(), u = new ArrayList<>();
+    for (final Character c : s.toCharArray()) {
       if(t.contains(c))
         u.remove(c);
       else

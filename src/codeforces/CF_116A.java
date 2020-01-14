@@ -12,7 +12,7 @@ public class CF_116A {
 
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
-    int s [][] = new int [n][3];
+    int s[][] = new int[n][3];
     int ans = 0;
     sc.nextLine();
 
@@ -21,9 +21,10 @@ public class CF_116A {
       s[i][1] = sc.nextInt();
       s[i][2] = i == 0 ? s[i][1] : (s[i - 1][2] - s[i][0]) + s[i][1];
       sc.nextLine();
-      ans = Math.max(s[i][2] , ans);
+      ans = Math.max(s[i][2], ans);
     }
 
+    sc.close();
     return ans;
   }
 }

@@ -4,18 +4,18 @@ import java.util.Arrays;
 
 public class WordsRotationCc {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
 
-    String[] w = new String[] {"apple", "anger", "monks", "stink"};
+    final String[] w = new String[] { "apple", "anger", "monks", "stink" };
 
     System.out.println(Arrays.toString(wordsRotationCc(w)));
   }
 
-  private static String[] wordsRotationCc(String[] w) {
+  private static String[] wordsRotationCc(final String[] w) {
 
-    String[] r = new String[w[0].length()];
+    final String[] r = new String[w[0].length()];
     for (int i = 0; i < w.length; i++) {
-      for (int j = 0, k = 0; j < r.length; j++, k--) {
+      for (int j = 0; j < r.length; j++) {
         r[j] = r[j] + w[i].charAt(i);
       }
     }

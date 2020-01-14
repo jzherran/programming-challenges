@@ -9,11 +9,11 @@ import java.util.Map;
 public class Ubachi {
 
   public static void main(String[] args) {
-    System.out.println(Ubachi("cufintxo r esritqdeucltnagecse.ue raaiS mt", "pancake"));
-    System.out.println(Ubachi("oet lfal ee tdc", "zebra"));
+    System.out.println(ubachiCalculation("cufintxo r esritqdeucltnagecse.ue raaiS mt", "pancake"));
+    System.out.println(ubachiCalculation("oet lfal ee tdc", "zebra"));
   }
 
-  static String Ubachi(String message, String keyword) {
+  static String ubachiCalculation(String message, String keyword) {
 
     char[][] charsIter1 = parseMessageToMatrix(message, keyword);
     message = getMessageMatrix(charsIter1);
@@ -22,14 +22,12 @@ public class Ubachi {
   }
 
   private static char[][] parseMessageToMatrix(String message, String keyword) {
-    final char[] letters =
-        new char[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
-            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    final char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+        'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
     Map<Character, List<Integer>> keyMap = new HashMap<>();
     char[] keyChars = keyword.toCharArray();
     int[] letterUbachi = new int[keyword.length()];
-    char[][] messageMatrix =
-        new char[(int) Math.ceil(message.length() / keyword.length())][keyword.length()];
+    char[][] messageMatrix = new char[(int) Math.ceil(message.length() / keyword.length())][keyword.length()];
 
     for (int j = 0, k = 0; j < messageMatrix[0].length; j++) {
       for (int i = 0; i < messageMatrix.length; i++, k++) {

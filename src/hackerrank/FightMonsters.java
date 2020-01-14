@@ -29,5 +29,6 @@ public class FightMonsters {
     }
     int result = getMaxMonsters(n, hit, t, h);
     System.out.println(result);
+    in.close();
   }
 }

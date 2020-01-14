@@ -4,17 +4,14 @@ import java.util.Scanner;
 
 public class MaxNumberOfPartitions {
 
-  public static void main(String[] args) {
-
-    Scanner sc = new Scanner(System.in);
-
+  public static void main(final String[] args) {
+    final Scanner sc = new Scanner(System.in);
     int t = sc.nextInt();
-    int[] r = new int[t];
 
     while (t > 0) {
 
-      int n = sc.nextInt();
-      int[] arr = new int[n];
+      final int n = sc.nextInt();
+      final int[] arr = new int[n];
 
       for (int i = 0; i < n; i++) {
         arr[i] = sc.nextInt();
@@ -23,9 +20,10 @@ public class MaxNumberOfPartitions {
       System.out.println(maxPartitions(arr, n));
       t--;
     }
+    sc.close();
   }
 
-  static int maxPartitions(int arr[], int n) {
+  static int maxPartitions(final int arr[], final int n) {
     int ans = 0, max_so_far = 0;
     for (int i = 0; i < n; ++i) {
 
@@ -43,14 +41,7 @@ public class MaxNumberOfPartitions {
 }
 
 /**
-4
-4
-2 1 0 3
-6
-2 1 0 3 4 5
-25
-7 15 6 2 20 0 9 12 16 5 19 13 4 14 24 1 22 11 23 10 3 17 18 8 21
-2
-0 0
-
+ * 4 4 2 1 0 3 6 2 1 0 3 4 5 25 7 15 6 2 20 0 9 12 16 5 19 13 4 14 24 1 22 11 23
+ * 10 3 17 18 8 21 2 0 0
+ * 
  */

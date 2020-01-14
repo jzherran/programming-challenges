@@ -5,17 +5,17 @@ import java.util.Scanner;
 
 public class CF_160A {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println(solution());
   }
 
   public static int solution() {
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    int c[] = new int[n];
+    final Scanner sc = new Scanner(System.in);
+    final int n = sc.nextInt();
+    final int c[] = new int[n];
     int t = 0, r = 0;
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
       c[i] = sc.nextInt();
       t += c[i];
     }

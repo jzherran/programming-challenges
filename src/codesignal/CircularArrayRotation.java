@@ -40,5 +40,7 @@ public class CircularArrayRotation {
     for (int i : qr) {
       System.out.println(a[i]);
     }
+
+    sc.close();
   }
 }

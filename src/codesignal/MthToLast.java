@@ -5,19 +5,20 @@ import java.util.Scanner;
 
 public class MthToLast {
 
-  public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named hackerrank.MthToLast. */
-
-    Scanner sc = new Scanner(System.in);
+  public static void main(final String[] args) {
+    /*
+     * Enter your code here. Read input from STDIN. Print output to STDOUT. Your
+     * class should be named hackerrank.MthToLast.
+     */
+    final Scanner sc = new Scanner(System.in);
 
     BigInteger n = BigInteger.valueOf(Long.parseLong(sc.nextLine()));
-    String[] l = sc.nextLine().split(" ");
+    final String[] l = sc.nextLine().split(" ");
 
-    DoublyLinkedList list = new DoublyLinkedList();
+    final DoublyLinkedList list = new DoublyLinkedList();
 
-    for (String li : l) {
-      DoublyLinkedNode node =
-          new DoublyLinkedNode(null, null, BigInteger.valueOf(Long.parseLong(li)));
+    for (final String li : l) {
+      final DoublyLinkedNode node = new DoublyLinkedNode(null, null, BigInteger.valueOf(Long.parseLong(li)));
       DoublyLinkedList.insertEnd(list, node);
     }
 
@@ -35,6 +36,7 @@ public class MthToLast {
       }
     }
     System.out.println(r);
+    sc.close();
   }
 
   static class DoublyLinkedList {
@@ -45,50 +47,48 @@ public class MthToLast {
     DoublyLinkedList() {
     }
 
-    static void insertBefore(DoublyLinkedList list, DoublyLinkedNode node,
-        DoublyLinkedNode newNode) {
+    static void insertBefore(final DoublyLinkedList list, final DoublyLinkedNode node, final DoublyLinkedNode newNode) {
       newNode.next = node;
-        if (node.prev == null) {
-            list.firstNode = newNode;
-        } else {
-            node.prev.next = newNode;
-            newNode.prev = node.prev;
-        }
+      if (node.prev == null) {
+        list.firstNode = newNode;
+      } else {
+        node.prev.next = newNode;
+        newNode.prev = node.prev;
+      }
       node.prev = newNode;
     }
 
-    static void insertAfter(DoublyLinkedList list, DoublyLinkedNode node,
-        DoublyLinkedNode newNode) {
+    static void insertAfter(final DoublyLinkedList list, final DoublyLinkedNode node, final DoublyLinkedNode newNode) {
 
       newNode.prev = node;
-        if (node.next == null) {
-            list.lastNode = newNode;
-        } else {
-            newNode.next = node.next;
-            node.next.prev = newNode;
-        }
+      if (node.next == null) {
+        list.lastNode = newNode;
+      } else {
+        newNode.next = node.next;
+        node.next.prev = newNode;
+      }
       node.next = newNode;
     }
 
-    static void insertBeginning(DoublyLinkedList list, DoublyLinkedNode newNode) {
+    static void insertBeginning(final DoublyLinkedList list, final DoublyLinkedNode newNode) {
 
-        if (list.firstNode == null) {
-            list.firstNode = newNode;
-            list.lastNode = newNode;
-            newNode.prev = null;
-            newNode.next = null;
-        } else {
-            insertBefore(list, list.firstNode, newNode);
-        }
+      if (list.firstNode == null) {
+        list.firstNode = newNode;
+        list.lastNode = newNode;
+        newNode.prev = null;
+        newNode.next = null;
+      } else {
+        insertBefore(list, list.firstNode, newNode);
+      }
     }
 
-    static void insertEnd(DoublyLinkedList list, DoublyLinkedNode newNode) {
+    static void insertEnd(final DoublyLinkedList list, final DoublyLinkedNode newNode) {
 
-        if (list.lastNode == null) {
-            insertBeginning(list, newNode);
-        } else {
-            insertAfter(list, list.lastNode, newNode);
-        }
+      if (list.lastNode == null) {
+        insertBeginning(list, newNode);
+      } else {
+        insertAfter(list, list.lastNode, newNode);
+      }
     }
 
     @Override
@@ -103,7 +103,7 @@ public class MthToLast {
     protected DoublyLinkedNode next;
     protected BigInteger n;
 
-    DoublyLinkedNode(DoublyLinkedNode prev, DoublyLinkedNode next, BigInteger n) {
+    DoublyLinkedNode(final DoublyLinkedNode prev, final DoublyLinkedNode next, final BigInteger n) {
       this.prev = prev;
       this.next = next;
       this.n = n;

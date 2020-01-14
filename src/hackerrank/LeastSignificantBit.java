@@ -2,7 +2,7 @@ package hackerrank;
 
 public class LeastSignificantBit {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println(solution(12));
     }
 

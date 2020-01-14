@@ -16,5 +16,6 @@ public class BonAppetit {
     c[k] = 0;
     int t = Arrays.stream(c).sum() / 2;
     System.out.println(t == b ? "Bon Appetit" : (Math.abs(b - t)));
+    sc.close();
   }
 }

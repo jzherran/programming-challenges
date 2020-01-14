@@ -4,9 +4,9 @@ import java.util.*;
 
 public class DroneAmazon {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        List<Drone> drones = new ArrayList<>();
+        final List<Drone> drones = new ArrayList<>();
         drones.add(new Drone(4, 11));
         drones.add(new Drone(2, 15));
         drones.add(new Drone(5, 16));
@@ -15,7 +15,7 @@ public class DroneAmazon {
         drones.add(new Drone(9, 60));
         drones.add(new Drone(6, 22));
 
-        List<Drone> maintenanceDrones = new ArrayList<>();
+        final List<Drone> maintenanceDrones = new ArrayList<>();
         maintenanceDrones.add(new Drone(1, 20));
         maintenanceDrones.add(new Drone(5, 16));
         maintenanceDrones.add(new Drone(9, 60));
@@ -23,11 +23,12 @@ public class DroneAmazon {
         largestFlightDrones(drones, maintenanceDrones, 3);
     }
 
-    public static List<Drone> largestFlightDrones(List<Drone> drones, List<Drone> maintenance, int G) {
-        Map<Integer, Drone> result = new HashMap<>();
+    public static List<Drone> largestFlightDrones(final List<Drone> drones, final List<Drone> maintenance,
+            final int G) {
+        final Map<Integer, Drone> result = new HashMap<>();
 
         for (int i = 0; i < drones.size(); i++) {
-            Drone drone = drones.get(i);
+            final Drone drone = drones.get(i);
             if (!maintenance.contains(drone)) {
                 if (result.size() < G) {
                     result.put(result.size(), drone);
@@ -47,11 +48,11 @@ public class DroneAmazon {
 
 class Drone {
 
-    private int id;
+    private final int id;
 
-    private int flightDistance;
+    private final int flightDistance;
 
-    public Drone(int id, int flightDistance) {
+    public Drone(final int id, final int flightDistance) {
         this.id = id;
         this.flightDistance = flightDistance;
     }
@@ -70,7 +71,7 @@ class Drone {
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(final Object obj) {
         if(obj instanceof Drone) {
             return ((Drone) obj).getId() == getId();
         }

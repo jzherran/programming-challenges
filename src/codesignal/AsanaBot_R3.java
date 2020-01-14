@@ -2,17 +2,19 @@ package codesignal;
 
 public class AsanaBot_R3 {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
 
-    System.out.println(tasksScheduling(3, new int[] {2, 2, 2}));
+    System.out.println(tasksScheduling(3, new int[] { 2, 2, 2 }));
   }
 
-  static int tasksScheduling(int workingHours, int[] tasks) {
+  static int tasksScheduling(final int workingHours, final int[] tasks) {
     int totalTask = 0;
     boolean ws = true;
-    for (int task : tasks) {
-      if (task != tasks[0]) ws = false;
-      if (task > workingHours) return -1;
+    for (final int task : tasks) {
+      if (task != tasks[0])
+        ws = false;
+      if (task > workingHours)
+        return -1;
       totalTask += task;
     }
 
@@ -20,9 +22,9 @@ public class AsanaBot_R3 {
       return workingHours;
     }
 
-    int rest = totalTask % workingHours;
+    final int rest = totalTask % workingHours;
     if (rest >= 0) {
-      int days = totalTask / workingHours;
+      final int days = totalTask / workingHours;
       if (rest == 0) {
         return days;
       }

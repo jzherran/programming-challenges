@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class CircularWalk {
 
-  static int circularWalk(int n, int s, int t, int r_0, int g, int seed, int p) {
+  static int circularWalk(final int n, final int s, final int t, final int r_0, final int g, final int seed,
+      final int p) {
     // Complete this function
 
-    LinkedList<Integer> nList = new LinkedList<>();
+    final LinkedList<Integer> nList = new LinkedList<>();
     for (int i = 0; i < n; i++) {
       if (i == 0) {
         nList.add(i, 1);
@@ -20,16 +21,17 @@ public class CircularWalk {
     return -1;
   }
 
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    int n = in.nextInt();
-    int s = in.nextInt();
-    int t = in.nextInt();
-    int r_0 = in.nextInt();
-    int g = in.nextInt();
-    int seed = in.nextInt();
-    int p = in.nextInt();
-    int result = circularWalk(n, s, t, r_0, g, seed, p);
+  public static void main(final String[] args) {
+    final Scanner in = new Scanner(System.in);
+    final int n = in.nextInt();
+    final int s = in.nextInt();
+    final int t = in.nextInt();
+    final int r_0 = in.nextInt();
+    final int g = in.nextInt();
+    final int seed = in.nextInt();
+    final int p = in.nextInt();
+    final int result = circularWalk(n, s, t, r_0, g, seed, p);
     System.out.println(result);
+    in.close();
   }
 }

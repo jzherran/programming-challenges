@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Array2D {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        final Scanner sc = new Scanner(System.in);
 
-        int[][] h = new int[6][6];
+        final int[][] h = new int[6][6];
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
@@ -26,5 +26,6 @@ public class Array2D {
         }
 
         System.out.println(m);
+        sc.close();
     }
 }

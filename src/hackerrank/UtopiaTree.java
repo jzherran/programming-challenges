@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class UtopiaTree {
 
   public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    /*
+     * Enter your code here. Read input from STDIN. Print output to STDOUT. Your
+     * class should be named Solution.
+     */
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
     while (n > 0) {
@@ -20,6 +23,7 @@ public class UtopiaTree {
       }
       System.out.println(r);
       n--;
+      sc.close();
     }
   }
 }

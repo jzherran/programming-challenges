@@ -27,5 +27,6 @@ public class Duplication {
             String result = duplication(x);
             System.out.println(result);
         }
+        in.close();
     }
 }

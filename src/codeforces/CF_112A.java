@@ -13,9 +13,13 @@ public class CF_112A {
     char[] f = sc.nextLine().toLowerCase().toCharArray();
     char[] s = sc.nextLine().toLowerCase().toCharArray();
 
+    sc.close();
+
     for (int i = 0; i < f.length; i++) {
-      if (f[i] < s[i]) return -1;
-      if (s[i] < f[i]) return 1;
+      if (f[i] < s[i])
+        return -1;
+      if (s[i] < f[i])
+        return 1;
     }
     return 0;
   }

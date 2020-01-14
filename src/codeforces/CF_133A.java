@@ -11,12 +11,13 @@ public class CF_133A {
   public static String solution() {
     Scanner sc = new Scanner(System.in);
     String p = sc.nextLine();
+    sc.close();
 
-    for (char c: p.toCharArray()) {
-      if(c == 'H' || c == 'Q' || c == '9') return "YES";
+    for (char c : p.toCharArray()) {
+      if (c == 'H' || c == 'Q' || c == '9')
+        return "YES";
     }
 
-    sc.close();
     return "NO";
   }
 }

@@ -11,9 +11,8 @@ public class CF_281A {
   public static String solution() {
     Scanner sc = new Scanner(System.in);
     String word = sc.nextLine();
+    sc.close();
 
-    return (new StringBuilder()
-        .append(word.charAt(0))
-        .append("").toString()).toUpperCase() + word.substring(1);
+    return (new StringBuilder().append(word.charAt(0)).append("").toString()).toUpperCase() + word.substring(1);
   }
 }

@@ -38,5 +38,6 @@ public class DayOfTheProgrammer {
     int year = in.nextInt();
     String result = solve(year);
     System.out.println(result);
+    in.close();
   }
 }

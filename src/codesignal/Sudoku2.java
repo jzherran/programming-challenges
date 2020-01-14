@@ -6,37 +6,31 @@ import java.util.stream.IntStream;
 
 public class Sudoku2 {
 
-  public static void main(String[] args) {
-    System.out.println(sudoku2(new char[][] {
-        {'.', '.', '.', '1', '4', '.', '.', '2', '.'},
-        {'.', '.', '6', '.', '.', '.', '.', '.', '.'},
-        {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-        {'.', '.', '1', '.', '.', '.', '.', '.', '.'},
-        {'.', '6', '7', '.', '.', '.', '.', '.', '9'},
-        {'.', '.', '.', '.', '.', '.', '8', '1', '.'},
-        {'.', '3', '.', '.', '.', '.', '.', '.', '6'},
-        {'.', '.', '.', '.', '.', '7', '.', '.', '.'},
-        {'.', '.', '.', '5', '.', '.', '.', '7', '.'}
-    }));
+  public static void main(final String[] args) {
+    System.out.println(sudoku2(new char[][] { { '.', '.', '.', '1', '4', '.', '.', '2', '.' },
+        { '.', '.', '6', '.', '.', '.', '.', '.', '.' }, { '.', '.', '.', '.', '.', '.', '.', '.', '.' },
+        { '.', '.', '1', '.', '.', '.', '.', '.', '.' }, { '.', '6', '7', '.', '.', '.', '.', '.', '9' },
+        { '.', '.', '.', '.', '.', '.', '8', '1', '.' }, { '.', '3', '.', '.', '.', '.', '.', '.', '6' },
+        { '.', '.', '.', '.', '.', '7', '.', '.', '.' }, { '.', '.', '.', '5', '.', '.', '.', '7', '.' } }));
   }
 
-  static boolean sudoku2(char[][] grid) {
+  static boolean sudoku2(final char[][] grid) {
 
     // Position i=0 equals to rows, i=1 equals to columns, i=2 equals to squares
-    Set[][] counts = IntStream.range(0,3)
-        .mapToObj(x -> IntStream.range(0,9)
-            .mapToObj(y -> new HashSet())
-            .toArray(Set[]::new))
-        .toArray(Set[][]::new);
+    final Set[][] counts = IntStream.range(0, 3)
+        .mapToObj(x -> IntStream.range(0, 9).mapToObj(y -> new HashSet<>()).toArray(Set[]::new)).toArray(Set[][]::new);
 
     for (int i = 0; i < 9; i++) {
       for (int j = 0; j < 9; j++) {
-        char v = grid[i][j];
-        if(v != '.') {
-          int x = getSquare(i, j);
-          if (counts[0][i].contains(v)) return false;
-          if (counts[1][j].contains(v)) return false;
-          if (counts[2][x].contains(v)) return false;
+        final char v = grid[i][j];
+        if (v != '.') {
+          final int x = getSquare(i, j);
+          if (counts[0][i].contains(v))
+            return false;
+          if (counts[1][j].contains(v))
+            return false;
+          if (counts[2][x].contains(v))
+            return false;
           else {
             counts[0][i].add(v);
             counts[1][j].add(v);
@@ -48,9 +42,12 @@ public class Sudoku2 {
     return true;
   }
 
-  static int getSquare(int i, int j) {
-    if (i < 3) return (i/3)+(j/3);
-    else if (i > 5) return (i/3)+(j/3)+4;
-    else return (i/3)+(j/3)+2;
+  static int getSquare(final int i, final int j) {
+    if (i < 3)
+      return (i / 3) + (j / 3);
+    else if (i > 5)
+      return (i / 3) + (j / 3) + 4;
+    else
+      return (i / 3) + (j / 3) + 2;
   }
 }

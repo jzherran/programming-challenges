@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class CF_96A {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println(football());
   }
 
   public static String football() {
 
-    Scanner sc = new Scanner(System.in);
-    char[] t = sc.nextLine().toCharArray();
+    final Scanner sc = new Scanner(System.in);
+    final char[] t = sc.nextLine().toCharArray();
+    sc.close();
 
     int mt = 0;
     char at = 0;
@@ -34,8 +35,6 @@ public class CF_96A {
         return "YES";
       }
     }
-
-    sc.close();
     return "NO";
   }
 }

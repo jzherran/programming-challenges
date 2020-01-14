@@ -18,5 +18,6 @@ public class DesignerPDFViewer {
     }
 
     System.out.println(m * word.length());
+    in.close();
   }
 }

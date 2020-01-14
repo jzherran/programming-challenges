@@ -36,5 +36,6 @@ public class MagicSquare {
     }
 
     System.out.println(r);
+    in.close();
   }
 }

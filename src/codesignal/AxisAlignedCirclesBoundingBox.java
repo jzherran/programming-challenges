@@ -2,16 +2,16 @@ package codesignal;
 
 public class AxisAlignedCirclesBoundingBox {
 
-    public static void main(String[] args) {
-        int[] x = new int[] {1, 0, 4};
-        int[] y = new int[] {-1, 2, 2};
-        int[] r = new int[] {3, 5, 4};
+    public static void main(final String[] args) {
+        final int[] x = new int[] { 1, 0, 4 };
+        final int[] y = new int[] { -1, 2, 2 };
+        final int[] r = new int[] { 3, 5, 4 };
         System.out.println(axisAlignedCirclesBoundingBox(x, y, r));
     }
 
-    public static int axisAlignedCirclesBoundingBox(int x[], int y[], int r[]) {
+    public static int axisAlignedCirclesBoundingBox(final int x[], final int y[], final int r[]) {
         // up down left right
-        int[] c = new int[4];
+        final int[] c = new int[4];
         for(int i = 0; i < r.length; i++) {
             if(y[i] + r[i] > c[0]) {
                 c[0] = y[i] + r[i];

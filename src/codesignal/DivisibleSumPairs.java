@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class DivisibleSumPairs {
 
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    int n = in.nextInt();
-    int k = in.nextInt();
+  public static void main(final String[] args) {
+    final Scanner in = new Scanner(System.in);
+    final int n = in.nextInt();
+    final int k = in.nextInt();
+    final int a[] = new int[n];
     int r = 0;
-    int a[] = new int[n];
-    int m[][] = new int[(n * (n + 1)) / 2][2];
 
     for (int a_i = 0; a_i < n; a_i++) {
       a[a_i] = in.nextInt();
@@ -25,5 +24,6 @@ public class DivisibleSumPairs {
     }
 
     System.out.println(r);
+    in.close();
   }
 }

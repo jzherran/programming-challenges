@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class RemoveDigits {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println(Arrays.toString(removeDigits(15243, 2)));
     System.out.println(Arrays.toString(removeDigits(10391938, 4)));
     System.out.println(Arrays.toString(removeDigits(1038, 3)));
   }
 
-  public static long[] removeDigits(long n, int k) {
-    String s = String.valueOf(n);
+  public static long[] removeDigits(final long n, final int k) {
+    final String s = String.valueOf(n);
     String z = String.valueOf(Long.MAX_VALUE);
     String x = String.valueOf(Long.MIN_VALUE);
     for (int i = 0; i <= s.length() - k; i++) {
@@ -19,7 +19,7 @@ public class RemoveDigits {
       for (int j = i; j < i + k; j++) {
         t += s.charAt(j);
       }
-      long l = Long.parseLong(t);
+      final long l = Long.parseLong(t);
       if (l > Long.parseLong(x)) {
         x = t;
       }

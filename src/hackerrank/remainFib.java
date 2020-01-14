@@ -5,13 +5,13 @@ import java.math.BigInteger;
 public class remainFib {
 
     public static void main(String[] args) {
-        System.out.println(remainFib("56"));
+        System.out.println(remainFibCalculation("56"));
     }
 
-    static String remainFib(String number) {
+    static String remainFibCalculation(String number) {
         BigInteger n = new BigInteger(number);
-        BigInteger prevPrev = BigInteger.ONE, prev= new BigInteger("2"), curr = new BigInteger("3");
-        while(n.compareTo(BigInteger.ZERO) > 0) {
+        BigInteger prevPrev = BigInteger.ONE, prev = new BigInteger("2"), curr = new BigInteger("3");
+        while (n.compareTo(BigInteger.ZERO) > 0) {
             prevPrev = prev;
             prev = curr;
             curr = prevPrev.add(prev);

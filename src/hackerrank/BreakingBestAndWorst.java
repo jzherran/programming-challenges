@@ -35,5 +35,6 @@ public class BreakingBestAndWorst {
             separator = delimiter;
         }
         System.out.println("");
+        in.close();
     }
 }

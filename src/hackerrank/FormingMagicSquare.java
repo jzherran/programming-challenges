@@ -15,6 +15,7 @@ public class FormingMagicSquare {
         }
 
         System.out.println(formingMagicSquare(s));
+        in.close();
     }
 
     static int formingMagicSquare(int[][] s) {
