@@ -1,3 +1,5 @@
+package leetcode
+
 // 55. Jump Game [https://leetcode.com/problems/jump-game/]
 // Greedy algorithm, first interaction with this concept.
 func canJump(nums []int) bool {
