@@ -16,8 +16,11 @@ func main() {
 	fmt.Println(isPalindrome(x))
 }
 
-// 9.  [https://leetcode.com/problems/palindrome-number/]
-// Calculate if a number is palinfrome or not
+// 9. Palindrome number [https://leetcode.com/problems/palindrome-number/]
+// Calculate if a number is palinfrome or not: this approach can be improved
+// using the same approach to validate the initial data with the end data
+// but not stored bot data just get the reverse number and compare after get
+// each digit
 func isPalindrome(x int) bool {
 	if x < 0 {
 		return false
@@ -32,11 +35,8 @@ func isPalindrome(x int) bool {
 	if digits%2 != 0 {
 		digits--
 	}
-
-  fmt.Println(mod, digits)
   
   for i := 0; x > 0; i++ {
-    fmt.Println("Iter => ", i, "::", x, mod, x / mod, x % 10)
     if (x / mod != x % 10) {
       return false
     }
