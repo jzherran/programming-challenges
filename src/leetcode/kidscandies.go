@@ -4,21 +4,21 @@ package leetcode
 // Normal execises in the list of easy problems.
 // Array manage to resolve this problem.
 func kidsWithCandies(candies []int, extraCandies int) []bool {
-  res := make([]bool, len(candies))
-  
-  maxCandies := func (a []int) int {
-    maxVal := 0;
-    for _, v := range a {
-      if (v > maxVal) {
-        maxVal = v;
-      }
-    }
-    return maxVal;
-  }(candies);
-  
-  for i, c := range candies {
-    res[i] = (c + extraCandies) >= maxCandies
-  }
-  
-  return res;
+	res := make([]bool, len(candies))
+
+	maxCandies := func(a []int) int {
+		maxVal := 0
+		for _, v := range a {
+			if v > maxVal {
+				maxVal = v
+			}
+		}
+		return maxVal
+	}(candies)
+
+	for i, c := range candies {
+		res[i] = (c + extraCandies) >= maxCandies
+	}
+
+	return res
 }

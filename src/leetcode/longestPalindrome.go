@@ -73,7 +73,7 @@ func longestPalindrome(s string) string {
 }
 */
 
-// 55. Jump Game [https://leetcode.com/problems/longest-palindromic-substring/]
+// 5. Jump Game [https://leetcode.com/problems/longest-palindromic-substring/]
 // Dynamic algorithm to calculate the longest palindrome substring
 func longestPalindrome(s string) string {
 
@@ -119,6 +119,6 @@ func longestPalindrome(s string) string {
 
 		end := start + maxLength - 1
 
-		return s[start:end + 1]
+		return s[start : end+1]
 	}
 }
