@@ -12,7 +12,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	s, _ := reader.ReadString('\n')
 
-	fmt.Println(longestPalindrome(s))
+	fmt.Println(longestPalindrome(strings.ReplaceAll(s, "\n", "")))
 }
 
 func print2DSlice(matrix [][]int) {
@@ -77,7 +77,6 @@ func longestPalindrome(s string) string {
 // Dynamic algorithm to calculate the longest palindrome substring
 func longestPalindrome(s string) string {
 
-	s = strings.ReplaceAll(s, "\n", "")
 	n := len(s)
 
 	if n == 0 {
@@ -85,8 +84,6 @@ func longestPalindrome(s string) string {
 	} else if n == 1 {
 		return s
 	} else {
-		str := strings.Split(strings.ReplaceAll(s, "\n", ""), "")
-
 		t := make([][]int, n)
 		maxLength := 1
 
@@ -97,7 +94,7 @@ func longestPalindrome(s string) string {
 
 		start := 0
 		for i := 0; i < n-1; i++ {
-			if str[i] == str[i+1] {
+			if s[i] == s[i+1] {
 				t[i][i+1] = 1
 				start = i
 				maxLength = 2
@@ -107,7 +104,7 @@ func longestPalindrome(s string) string {
 		for k := 3; k <= n; k++ {
 			for i := 0; i < n-k+1; i++ {
 				j := i + k - 1
-				if t[i+1][j-1] == 1 && str[i] == str[j] {
+				if t[i+1][j-1] == 1 && s[i] == s[j] {
 					t[i][j] = 1
 
 					if k > maxLength {
