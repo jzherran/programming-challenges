@@ -1,13 +1,6 @@
-package main
+package leetcode
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
-)
-
+/*
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 
@@ -26,6 +19,7 @@ func main() {
 
 	fmt.Println(canJump(nums))
 }
+*/
 
 // 55. Jump Game [https://leetcode.com/problems/jump-game/]
 // Greedy algorithm, first interaction with this concept.
@@ -43,7 +37,7 @@ func canJump(nums []int) bool {
 		}
 
 		// select the max value between the old max value and the new value in the array
-		maxValue = Max(maxValue, value)
+		maxValue = max(maxValue, value)
 
 		// logic to evaluate if is posible to jump to the last index in the nums array
 		if len(nums) > 1 && maxValue == 0 {
@@ -60,7 +54,7 @@ func canJump(nums []int) bool {
 }
 
 // Max returns the larger of x or y.
-func Max(x, y int) int {
+func max(x, y int) int {
 	if x < y {
 		return y
 	}

@@ -1,12 +1,6 @@
-package main
+package leetcode
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strings"
-)
-
+/*
 func main() {
 
 	reader := bufio.NewReader(os.Stdin)
@@ -14,6 +8,7 @@ func main() {
 
 	fmt.Println(longestPalindrome(strings.ReplaceAll(s, "\n", "")))
 }
+*/
 
 func print2DSlice(matrix [][]int) {
 	n := len(matrix)
