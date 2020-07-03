@@ -11,8 +11,12 @@ import (
 // FindNumbers solution struct
 type FindNumbers struct{}
 
+func (r *Runner) Name() string {
+	
+}
+
 // Run execute the solution proposed
-func (f FindNumbers) Run() error {
+func (f *FindNumbers) Run() error {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')

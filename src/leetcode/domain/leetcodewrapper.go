@@ -4,9 +4,3 @@ package domain
 type Runner interface {
 	Run() error
 }
-
-// Input is an element used like a wrapper to pass information about the problem to process
-type Input struct {
-	QuantityValue int
-	StringValue   string
-}
