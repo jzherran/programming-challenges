@@ -3,3 +3,9 @@
 out
 .idea
 .vscode
+
+# Compile file
+src/leetcode/leetcode
+
+# OSX files
+.DS_Store
