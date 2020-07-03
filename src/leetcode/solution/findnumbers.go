@@ -1,7 +1,18 @@
-package leetcode
+package solution
 
-/*
-func main() {
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+// FindNumbers solution struct
+type FindNumbers struct{}
+
+// Run execute the solution proposed
+func (f FindNumbers) Run() error {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
@@ -13,15 +24,16 @@ func main() {
 		if e == nil {
 			nums = append(nums, cv)
 		} else {
-			panic(e)
+			return e
 		}
 	}
 
-	fmt.Println(nums)
+	// fmt.Println(nums)
 	fmt.Println(findNumbers(nums))
+	return nil
 }
-*/
 
+// 1295. Find numbers with even number of digits
 func findNumbers(nums []int) int {
 
 	total := 0

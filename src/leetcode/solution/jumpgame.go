@@ -1,7 +1,18 @@
-package leetcode
+package solution
 
-/*
-func main() {
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+// JumpGame solution struct
+type JumpGame struct{}
+
+// Run execute the solution proposed
+func (j JumpGame) Run() error {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
@@ -13,13 +24,13 @@ func main() {
 		if e == nil {
 			nums = append(nums, cv)
 		} else {
-			panic(e)
+			return e
 		}
 	}
 
 	fmt.Println(canJump(nums))
+	return nil
 }
-*/
 
 // 55. Jump Game [https://leetcode.com/problems/jump-game/]
 // Greedy algorithm, first interaction with this concept.
