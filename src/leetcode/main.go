@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	r := new(solution.JumpGame)
+	r := new(solution.IntToRoman)
 
 	if r != nil {
 		if e := r.Run(); e != nil {
