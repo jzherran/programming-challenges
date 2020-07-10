@@ -1,9 +1,20 @@
 package solution
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 // IntToRoman struct
 type IntToRoman struct{}
+
+// Run the solution
+func (r *IntToRoman) Run() error {
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(intToRoman(n))
+	return nil
+}
 
 func intToRoman(num int) string {
 	sb := strings.Builder{}
