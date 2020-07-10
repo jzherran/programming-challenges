@@ -9,3 +9,5 @@ src/leetcode/leetcode
 
 # OSX files
 .DS_Store
+
+.gitconfig
