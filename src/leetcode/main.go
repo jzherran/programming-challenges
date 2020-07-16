@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	r := new(solution.IntToRoman)
+	r := new(solution.SearchInsert)
 
 	if r != nil {
 		if e := r.Run(); e != nil {
