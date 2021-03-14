@@ -12,24 +12,22 @@ import (
 type JumpGame struct{}
 
 // Run execute the solution proposed
-func (j JumpGame) Run() error {
+func (j *JumpGame) Run() {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
 	nums := []int{}
 
 	for _, v := range strings.Split(data, ",") {
-
 		cv, e := strconv.Atoi(strings.ReplaceAll(v, "\n", ""))
 		if e == nil {
-			nums = append(nums, cv)
-		} else {
-			return e
+			panic(e)
 		}
+
+		nums = append(nums, cv)
 	}
 
 	fmt.Println(canJump(nums))
-	return nil
 }
 
 // 55. Jump Game [https://leetcode.com/problems/jump-game/]

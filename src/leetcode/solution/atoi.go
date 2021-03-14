@@ -13,16 +13,15 @@ import (
 type Atoi struct{}
 
 // Run execute solution
-func (a *Atoi) Run() error {
+func (a *Atoi) Run() {
 	reader := bufio.NewReader(os.Stdin)
+	
 	data, err := reader.ReadString('\n')
-
 	if err != nil {
-		return err
+		panic(err)
 	}
 
 	fmt.Println(myAtoi(strings.TrimRight(data, "\n")))
-	return nil
 }
 
 func myAtoi(str string) int {

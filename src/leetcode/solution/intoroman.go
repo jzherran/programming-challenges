@@ -9,11 +9,10 @@ import (
 type IntToRoman struct{}
 
 // Run the solution
-func (r *IntToRoman) Run() error {
+func (r *IntToRoman) Run() {
 	var n int
 	fmt.Scan(&n)
 	fmt.Println(intToRoman(n))
-	return nil
 }
 
 func intToRoman(num int) string {

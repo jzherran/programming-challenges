@@ -12,7 +12,7 @@ import (
 type SortColors struct{}
 
 // Run ...
-func (sc *SortColors) Run() error {
+func (sc *SortColors) Run() {
 	reader := bufio.NewReader(os.Stdin)
 	data, _ := reader.ReadString('\n')
 	nums := []int{}
@@ -29,7 +29,6 @@ func (sc *SortColors) Run() error {
 
 	sortColors(nums)
 	fmt.Println(nums)
-	return nil
 }
 
 func sortColors(nums []int) {

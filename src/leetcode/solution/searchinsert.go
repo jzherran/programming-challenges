@@ -12,7 +12,7 @@ import (
 type SearchInsert struct{}
 
 // Run ...
-func (s SearchInsert) Run() error {
+func (s *SearchInsert) Run() {
 	scan := bufio.NewScanner(os.Stdin)
 	scan.Split(bufio.ScanLines)
 
@@ -41,7 +41,6 @@ func (s SearchInsert) Run() error {
 	}
 
 	fmt.Println(searchInsert(A, x))
-	return nil
 }
 
 func searchInsert(A []int, x int) int {

@@ -1,7 +1,16 @@
 package solution
 
-/*
-func main() {
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+type KidsCandies struct{}
+
+func (k *KidsCandies) Run() {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
@@ -24,11 +33,8 @@ func main() {
 
 	fmt.Println(kidsWithCandies(candies, extraCandies))
 }
-*/
 
 // 1431. Kids With the Greatest Number of Candies [https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/]
-// Normal execises in the list of easy problems.
-// Array manage to resolve this problem.
 func kidsWithCandies(candies []int, extraCandies int) []bool {
 	res := make([]bool, len(candies))
 

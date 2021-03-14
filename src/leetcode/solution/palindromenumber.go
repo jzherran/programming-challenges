@@ -1,27 +1,23 @@
 package solution
 
 import (
+	"fmt"
 	"math"
 )
 
-/*
-func main() {
+type PalindromeNumber struct{}
+
+func (p *PalindromeNumber) Run() {
 	var x int
 	_, err := fmt.Scan(&x)
-
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println(isPalindrome(x))
 }
-*/
 
 // 9. Palindrome number [https://leetcode.com/problems/palindrome-number/]
-// Calculate if a number is palinfrome or not: this approach can be improved
-// using the same approach to validate the initial data with the end data
-// but not stored bot data just get the reverse number and compare after get
-// each digit
 func isPalindrome(x int) bool {
 	if x < 0 {
 		return false

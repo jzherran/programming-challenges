@@ -1,11 +1,17 @@
 package solution
 
 import (
+	"bufio"
+	"fmt"
+	"os"
 	"sort"
+	"strconv"
+	"strings"
 )
 
-/*
-func main() {
+type SortedSquares struct{}
+
+func (s *SortedSquares) Run() {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
@@ -24,7 +30,6 @@ func main() {
 	fmt.Println(nums)
 	fmt.Println(sortedSquares(nums))
 }
-*/
 
 func sortedSquares(A []int) []int {
 	var res []int

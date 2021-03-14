@@ -11,16 +11,15 @@ import (
 type RomanToInt struct{}
 
 // Run ...
-func (rti *RomanToInt) Run() error {
+func (r *RomanToInt) Run() {
 	reader := bufio.NewReader(os.Stdin)
-	data, err := reader.ReadString('\n')
 
+	data, err := reader.ReadString('\n')
 	if err != nil {
-		return err
+		panic(err)
 	}
 
 	fmt.Println(romanToInt(strings.TrimRight(data, "\n")))
-	return nil
 }
 
 func romanToInt(s string) int {

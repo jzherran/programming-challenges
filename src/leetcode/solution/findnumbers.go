@@ -12,25 +12,23 @@ import (
 type FindNumbers struct{}
 
 // Run execute the solution proposed
-func (f *FindNumbers) Run() error {
+func (f *FindNumbers) Run() {
 	reader := bufio.NewReader(os.Stdin)
 
 	data, _ := reader.ReadString('\n')
 	nums := []int{}
 
 	for _, v := range strings.Split(data, ",") {
-
 		cv, e := strconv.Atoi(strings.ReplaceAll(v, "\n", ""))
-		if e == nil {
-			nums = append(nums, cv)
-		} else {
-			return e
+		if e != nil {
+			panic(e)
 		}
+		
+		nums = append(nums, cv)
 	}
 
 	// fmt.Println(nums)
 	fmt.Println(findNumbers(nums))
-	return nil
 }
 
 // 1295. Find numbers with even number of digits

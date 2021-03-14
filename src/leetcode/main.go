@@ -5,12 +5,10 @@ import (
 )
 
 func main() {
-	r := new(solution.SearchInsert)
+	sol := new(solution.LuckyNumbers)
 
-	if r != nil {
-		if e := r.Run(); e != nil {
-			panic(e)
-		}
+	if sol != nil {
+		sol.Run()
 	} else {
 		panic("Is not possible to launch the process to resolve the problem!")
 	}
